@@ -247,6 +247,13 @@ blockquote { margin: 20px 0; padding: 15px 20px; border-left: 4px solid var(--br
 .article-section h3 { margin: 23px 0 7px; font-size: 1.1rem; }
 .article-section h3::before { content: ""; display: inline-block; width: 4px; height: 16px; margin: 0 8px -2px 0; background: var(--brand); }
 .article-section ul { padding-left: 22px; }
+.keyword-row { display: flex; flex-wrap: wrap; gap: 7px; }
+.keyword-row span { padding: 5px 9px; border: 1px solid color-mix(in srgb, var(--brand), transparent 58%); background: var(--brand-soft); color: var(--brand-dark); font-size: 12px; font-weight: 800; }
+.history-group { margin-top: 18px; padding: 1px 18px 8px; border-left: 3px solid var(--line-strong); background: color-mix(in srgb, var(--paper-muted), transparent 28%); }
+.history-group + .history-group { margin-top: 24px; }
+.history-entry { padding: 10px 0; border-top: 1px solid var(--line); }
+.history-entry h4 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 5px; font-size: 14px; }
+.history-entry p { margin: 0; font-size: 14px; line-height: 1.72; }
 .combat-summary { margin-bottom: 14px; padding: 15px 18px; border-left: 4px solid var(--brand); background: var(--brand-soft); }
 .combat-summary span { color: var(--brand-dark); font-size: 12px; font-weight: 900; letter-spacing: .04em; }
 .combat-summary p { margin: 4px 0 0; font-size: 14px; }

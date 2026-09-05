@@ -30,10 +30,19 @@
   image: 'assets/images/characters/파일명.png',
   gender: '여성',
   school: '소속 학교',
+  club: '동아리 또는 TBD',
   major: '전공',
   role: '전투 역할',
   coreColor: 'TBD',
   palette: ['#3f3f3f', '#666666', '#8c8c8c', '#b3b3b3', '#d9d9d9'],
+  personalityKeywords: ['성격 키워드'],
+  moeElements: ['모에 요소'],
+  novelHistory: [
+    { title: '원작소설 사건명', body: '게임 본편보다 과거 시점의 행적' }
+  ],
+  history: [
+    { title: '게임 본편', body: '미확정 내용', status: 'TBD' }
+  ],
   protocols: ['화염', '기동'], // [후속 설계]
   skills: [
     { type: '액티브', name: '스킬명', trigger: '발동 조건',
@@ -52,7 +61,7 @@
   }
 }</code></pre></section>
       <section class="article-section"><h2><span>3.</span> 공개 자료와 내부 자료</h2><div class="scope-grid"><div><span class="scope public">PUBLIC</span><b>외부 공개</b><p>캐릭터 소개, 외형, 성격, 공개된 작중 행적, 스킬 설명, 전용무기와 확정된 프로토콜처럼 팬과 파트너가 읽어도 되는 내용입니다.</p></div><div><span class="scope internal">INTERNAL</span><b>내부 개발</b><p>캐릭터 코드, 신장·쓰리사이즈, 성우/일러스트레이터 섭외 상태, 아트 제작 사양, 밸런스 메모와 소스 문서 경로를 기록합니다.</p></div></div></section>
-      <section class="article-section"><h2><span>4.</span> 기획 상태 표기</h2><div class="status-legend"><span><b class="design-status confirmed">확정</b>현재 프로젝트 기준</span><span><b class="design-status proposed">권장안</b>반대 결정이 없으면 채택</span><span><b class="design-status validation">데모 검증</b>방향은 확정, 수치 조정 예정</span><span><b class="design-status followup">후속 설계</b>데이터·콘텐츠 설계 필요</span><span><b class="design-status art">그래픽 추가 예정</b>디자인 확정, 제작물 대기</span><span><b class="design-status tbd">TBD</b>v2.3에서 확인할 수 없음</span></div><p class="field-help">새 정보를 추가할 때는 출처 문서에 적힌 상태를 그대로 사용합니다. 최신 문서에서 확인할 수 없는 값은 추정하지 않고 <code>TBD</code>로 기록합니다.</p></section>
+      <section class="article-section"><h2><span>4.</span> 기획 상태 표기</h2><div class="status-legend"><span><b class="design-status confirmed">확정</b>현재 프로젝트 기준</span><span><b class="design-status proposed">권장안</b>반대 결정이 없으면 채택</span><span><b class="design-status validation">데모 검증</b>방향은 확정, 수치 조정 예정</span><span><b class="design-status followup">후속 설계</b>데이터·콘텐츠 설계 필요</span><span><b class="design-status art">그래픽 추가 예정</b>디자인 확정, 제작물 대기</span><span><b class="design-status tbd">TBD</b>최신 자료에서 확인할 수 없음</span></div><p class="field-help">학교·동아리와 원작 시점의 행적은 원작소설 1편을 우선하고, 게임 시스템은 v2.3을 따릅니다. 확인되지 않은 값은 추정하지 않고 <code>TBD</code>로 기록합니다.</p></section>
       <section class="article-section" id="internal"><h2><span>5.</span> 내부 모드 주의사항</h2><div class="notice notice-warning"><strong>보안 기능이 아닙니다</strong><span>상단의 ‘내부 개발’ 전환은 화면에서 내용을 구분해서 보는 기능일 뿐입니다. 배포 파일에는 내부 데이터가 그대로 포함되므로 외부 공개본을 배포할 때는 <code>data.js</code>에서 <code>internal</code>과 <code>resource</code> 내용을 제거하거나 별도의 공개용 데이터 파일을 사용하세요.</span></div></section>
       <section class="article-section"><h2><span>6.</span> 폴더 구성</h2><div class="file-tree"><span>PROJECTACADEMIA_WIKI_WEB/</span><span>├─ index.html <em>대문·게임 소개</em></span><span>├─ characters.html <em>학생 명부·검색</em></span><span>├─ character.html <em>캐릭터 상세 템플릿</em></span><span>├─ guide.html <em>이 문서</em></span><span>└─ assets/</span><span>&nbsp;&nbsp; ├─ css/styles.css <em>전체 디자인</em></span><span>&nbsp;&nbsp; ├─ js/data.js <em>수정이 잦은 콘텐츠</em></span><span>&nbsp;&nbsp; ├─ js/app.js <em>검색·필터·화면 기능</em></span><span>&nbsp;&nbsp; └─ images/characters/ <em>캐릭터 이미지</em></span></div></section>
     </article>
