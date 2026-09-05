@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="프로젝트: 아카데미아 팀 위키 — 게임, 세계관, 캐릭터 및 개발 자료">
+  <title>프로젝트: 아카데미아 위키</title>
+  <link rel="icon" href="ProAkaTitle_Kr.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="icon-button menu-button" type="button" aria-label="메뉴 열기" aria-controls="sidebar" aria-expanded="false">☰</button>
+      <a class="wordmark" href="index.html"><img src="ProAkaTitle_Kr.png" alt="프로젝트 아카데미아"><span>팀 위키</span></a>
+      <form class="site-search" action="characters.html" role="search">
+        <label class="sr-only" for="global-search">위키 검색</label>
+        <input id="global-search" name="q" type="search" placeholder="캐릭터·학교·스킬 검색" autocomplete="off">
+        <button type="submit" aria-label="검색">검색</button>
+      </form>
+      <div class="header-actions">
+        <button class="mode-toggle" type="button" aria-pressed="false"><span class="mode-dot"></span><span class="mode-label">외부 공개</span></button>
+        <button class="icon-button theme-toggle" type="button" aria-label="화면 테마 변경">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar">
+      <nav aria-label="주요 문서">
+        <p class="nav-heading">프로젝트</p>
+        <a class="nav-link active" href="index.html"><span>⌂</span> 대문</a>
+        <a class="nav-link" href="index.html#game"><span>▣</span> 게임 소개</a>
+        <a class="nav-link" href="characters.html"><span>♟</span> 등장인물</a>
+        <p class="nav-heading">세계관</p>
+        <a class="nav-link" href="index.html#world"><span>◇</span> 아카데미아</a>
+        <a class="nav-link" href="index.html#tower"><span>△</span> 천공의 탑</a>
+        <a class="nav-link" href="index.html#systems"><span>◎</span> 전투 시스템</a>
+        <p class="nav-heading">팀 도구</p>
+        <a class="nav-link internal-only" href="guide.html"><span>⚙</span> 개발 자료 안내 <b>내부</b></a>
+        <a class="nav-link" href="guide.html"><span>＋</span> 문서 추가 방법</a>
+      </nav>
+      <div class="sidebar-foot">
+        <img src="BlossomGames_Logo.png" alt="Blossom Games">
+        <span>Project Wiki · v0.1</span>
+      </div>
+    </aside>
+
+    <main class="main" id="content">
+      <div class="crumbs" aria-label="현재 위치"><a href="index.html">프로젝트:아카데미아</a><span>›</span><span>대문</span></div>
+      <article class="wiki-article">
+        <header class="article-header">
+          <div>
+            <span class="eyebrow">PROJECT DATABASE</span>
+            <h1>프로젝트: 아카데미아</h1>
+            <p class="lead">전투는 자동, 승리는 설계하라!</p>
+          </div>
+          <div class="article-meta"><span class="status-dot"></span> 최근 갱신 2026.09.05</div>
+        </header>
+
+        <div class="notice notice-info"><strong>문서 안내</strong><span>외부 공개 정보와 팀 내부 기획 자료를 한곳에서 관리합니다. 상단의 공개 범위 전환으로 내부 메모를 표시할 수 있습니다.</span></div>
+
+        <div class="home-grid">
+          <section class="feature-panel" id="game">
+            <div class="feature-copy">
+            <span class="section-kicker">DUNGEON EXPEDITION AUTO BATTLER</span>
+              <h2>조사하고, 설계하고, 돌파하라.</h2>
+              <p>네 명의 학생 조사대를 편성해 균열에 침식된 100층 천공의 탑을 탐사하고, 현장에서 회수한 무기·모듈·전술 기록으로 8×8 자동전투의 규칙을 설계하는 던전 탐험형 오토배틀러 로그라이크 RPG입니다.</p>
+              <div class="feature-actions"><a class="button primary" href="characters.html">학생 명부 보기</a><a class="button quiet" href="#systems">게임 구조</a></div>
+            </div>
+            <div class="loop-card" aria-label="핵심 플레이 흐름">
+              <span>01 · 조사 임무</span><i></i><span>02 · 방 탐험</span><i></i><span>03 · 8×8 전투</span><i></i><span>04 · 장비 개조</span>
+            </div>
+          </section>
+
+          <aside class="game-infobox" aria-label="게임 기본 정보">
+            <div class="infobox-title">프로젝트: 아카데미아</div>
+            <div class="title-logo-wrap"><img src="ProAkaTitle_Kr.png" alt="프로젝트 아카데미아 타이틀 로고"></div>
+            <dl class="compact-info">
+              <div><dt>장르</dt><dd>던전 탐험형 오토배틀러 로그라이크 RPG</dd></div>
+              <div><dt>플랫폼</dt><dd>Windows PC · Steam</dd></div>
+              <div><dt>엔진</dt><dd>Unity</dd></div>
+              <div><dt>개발</dt><dd>BlossomGames</dd></div>
+              <div><dt>플레이</dt><dd>싱글 플레이 · 최대 4인</dd></div>
+              <div><dt>주 무대</dt><dd>100층 천공의 탑</dd></div>
+              <div class="internal-only"><dt>기준 문서</dt><dd><span class="design-status confirmed">확정</span> GDD v2.3</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <section class="article-section" id="overview">
+          <h2><span>1.</span> 개요</h2>
+          <p><strong>프로젝트: 아카데미아</strong>는 학원도시 아카데미아의 학생 조사대가 대균열 이후 통신이 끊긴 천공의 탑을 탐사하는 게임입니다. 플레이어는 코디네이터로서 조사 경로와 위험 감수, 장비 배분, 전투 전 배치와 제한명령을 결정합니다. 자동전투의 결과는 탐험과 준비 단계에서 내린 판단의 합으로 설명되어야 합니다.</p>
+          <blockquote>약 20~22년 전 발생한 대균열 이후 이능력이 발현된 학생들은 학원도시에서 전투·전술 교육을 받으며 균열 사건에 대응한다. <span class="design-status confirmed">확정</span></blockquote>
+        </section>
+
+        <section class="article-section" id="systems">
+          <h2><span>2.</span> 핵심 시스템</h2>
+          <div class="system-grid system-grid-wide">
+            <div class="system-card"><b>마이크로 플로어 탐험</b><p>한 층의 10~15개 방 중 현재 위치 주변을 살피고 전투·정찰·보급·정비·사건의 방문 순서를 정합니다.</p><span class="design-status confirmed">확정</span></div>
+            <div class="system-card"><b>보안 해제와 승강기</b><p>층별 보안 해제 퀘스트를 완료해 보안키를 얻고 승강기 제어반에 등록해야 상층으로 이동합니다.</p><span class="design-status confirmed">확정</span></div>
+            <div class="system-card"><b>8×8 자동전투</b><p>적의 시작 위치와 의도를 확인하고 네 명을 배치합니다. 이동·기본공격·스킬은 자동 실행됩니다.</p><span class="design-status confirmed">확정</span></div>
+            <div class="system-card"><b>제한명령</b><p>영구 해금한 명령 중 3종을 준비하고 전투 중 서로 다른 명령을 최대 2회 직접 발동합니다.</p><span class="design-status confirmed">확정</span></div>
+            <div class="system-card"><b>무기와 모듈</b><p>기본 무기는 보장되며 상위 무기는 완제품으로 파밍합니다. 동일 모듈 3개와 회로 파편으로 수동 개조·완성합니다.</p><span class="design-status confirmed">확정</span></div>
+            <div class="system-card"><b>지속 HP와 침식도</b><p>캐릭터 HP는 작전 동안 유지됩니다. 코디네이터 침식도는 캐릭터 수치가 아니라 플레이어 권한을 제한합니다.</p><span class="design-status confirmed">확정</span></div>
+          </div>
+          <div class="internal-note internal-only"><strong>v2.3 충돌 처리</strong><p>층별 3~5웨이브, 매 층 상점, 학교·동아리 글로벌 전투 시너지, 골드 잠재력·슬롯 구매, 전투 후 완전 회복, PC·Mobile 동시 출시는 기준 기획에서 삭제했습니다.</p></div>
+        </section>
+
+        <section class="article-section" id="operation">
+          <h2><span>3.</span> 조사 작전 구조</h2>
+          <div class="operation-flow" aria-label="조사 작전 핵심 흐름">
+            <div><b>기지</b><span>조사 임무·최대 4인 파티·작전 규약 선택</span></div><i>→</i><div><b>탐험</b><span>리더 1인 이동·방 그래프·보안 해제</span></div><i>→</i><div><b>전투</b><span>동일 공간에서 8×8 격자 전개</span></div><i>→</i><div><b>성장</b><span>모듈·완제품 무기·조사 자원</span></div>
+          </div>
+          <div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>구분</th><th>기준</th><th>상태</th></tr></thead><tbody>
+            <tr><td>기본 런</td><td>20층 독립 조사 작전 5개, 총 100층</td><td><span class="design-status confirmed">확정</span></td></tr>
+            <tr><td>체크포인트</td><td>5·10·15층 수문장 이후 파티 1명 교대 가능</td><td><span class="design-status confirmed">확정</span></td></tr>
+            <tr><td>대구역 계승</td><td>전술 기록 1개와 다음 작전 시작 슬롯 예산 +1</td><td><span class="design-status confirmed">확정</span></td></tr>
+            <tr><td>1~20층 목표 시간</td><td>첫 클리어 약 2시간</td><td><span class="design-status validation">데모 검증</span></td></tr>
+            <tr><td>전체 목표 시간</td><td>작전별 2·3·4·5·6시간, 총 약 20시간</td><td><span class="design-status validation">데모 검증</span></td></tr>
+            <tr><td>작전 링크</td><td>파티 내 한 쌍의 짧은 합동 목표</td><td><span class="design-status followup">후속 설계</span></td></tr>
+          </tbody></table></div>
+        </section>
+
+        <section class="article-section" id="world">
+          <h2><span>4.</span> 세계관</h2>
+          <div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>명칭</th><th>설명</th><th>상태</th></tr></thead><tbody><tr><td><a href="#world">아카데미아</a></td><td>이능력자 학생들을 교육하고 훈련하는 학원도시.</td><td><span class="design-status confirmed">확정</span></td></tr><tr id="tower"><td><a href="#tower">천공의 탑</a></td><td>알파 코퍼레이션이 운영하던 개방구역·기업 운영·연구·수직도시·천공중추를 품은 도시형 타워.</td><td><span class="design-status confirmed">확정</span></td></tr><tr><td>대균열</td><td>약 20~22년 전 현실의 법칙을 흔들고 이종 존재를 출현시킨 공식 사건명.</td><td><span class="design-status confirmed">확정</span></td></tr><tr><td>코디네이터</td><td>학생 조사대를 편성·지휘하며 탐험과 전투의 선택을 설계하는 플레이어 역할.</td><td><span class="design-status confirmed">확정</span></td></tr><tr><td>알파 코퍼레이션</td><td>천공의 탑 과거 소유자. 전면 주역보다 환경 표식과 보안 기록으로 노출됩니다.</td><td><span class="design-status confirmed">확정</span></td></tr></tbody></table></div>
+        </section>
+
+        <section class="article-section">
+          <h2><span>5.</span> 제작 기준 현황</h2>
+          <div class="status-legend"><span><b class="design-status confirmed">확정</b> 현재 프로젝트 기준</span><span><b class="design-status proposed">권장안</b> 반대 결정이 없으면 채택</span><span><b class="design-status validation">데모 검증</b> 방향 확정, 수치 조정 예정</span><span><b class="design-status followup">후속 설계</b> 추가 설계 필요</span><span><b class="design-status art">그래픽 추가 예정</b> 디자인 확정, 제작물 대기</span><span><b class="design-status tbd">TBD</b> 기획서에서 확인 불가</span></div>
+          <div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>영역</th><th>v2.3 기준</th><th>상태</th></tr></thead><tbody><tr><td>1.0 캐릭터</td><td>12명 · 시스템 개발 기준 6명 · 2026년 11월 테스트 8명 제한 · 연내 10명 제작 목표</td><td><span class="design-status confirmed">확정</span></td></tr><tr><td>상위 무기</td><td>캐릭터당 최소 2종의 완제품 후보</td><td><span class="design-status proposed">권장안</span></td></tr><tr><td>범용 모듈</td><td>30~40종, 버티컬 슬라이스 12종부터 검증</td><td><span class="design-status validation">데모 검증</span></td></tr><tr><td>캐릭터 그래픽</td><td>고품질 ACG 2D 일러스트 + 툰 셰이딩 SD 3D</td><td><span class="design-status confirmed">확정</span></td></tr></tbody></table></div>
+        </section>
+
+        <section class="article-section">
+          <h2><span>6.</span> 바로가기</h2>
+          <div class="portal-grid">
+            <a href="characters.html"><strong>등장인물</strong><span>현재 등록 10명 · 1.0 목표 12명의 프로필과 전투 키트</span><em>목록으로 →</em></a>
+            <a href="guide.html"><strong>편집 가이드</strong><span>캐릭터·게임 정보를 안전하게 추가하는 방법</span><em>가이드 보기 →</em></a>
+          </div>
+        </section>
+      </article>
+    </main>
+  </div>
+  <div class="sidebar-scrim" hidden></div>
+</body>
+</html>
